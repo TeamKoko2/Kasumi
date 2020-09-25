@@ -1,20 +1,18 @@
+const express=require('express')
+const app = express()
+app.listen(8080)
+app.get('/', (req,res)=>{
+res.send('Online')
+})
+
 /******************************************************
  * Discord Bot Maker Bot
- * Version 1.6.10
+ * Version 1.6.0
  * Robert Borghese
  ******************************************************/
- const express = require('express');
- const app = express();
-
- app.get('/', (req, res) => {
-     res.send('ONLINE');
- });
- app.listen(8080, function () {
-     console.log('online at 8080')
- });
 
 const DBM = {};
-DBM.version = "1.6.10";
+DBM.version = "1.6.0";
 
 const DiscordJS = DBM.DiscordJS = require("discord.js");
 
@@ -47,12 +45,8 @@ Bot.init = function() {
 };
 
 Bot.initBot = function() {
-	this.bot = new DiscordJS.Client({ ws: { intents: this.intents() }});
+	this.bot = new DiscordJS.Client();
 };
-
-Bot.intents = function() {
-	return DiscordJS.Intents.NON_PRIVILEGED;
-}
 
 Bot.setupBot = function() {
 	this.bot.on("raw", this.onRawData);
@@ -148,7 +142,7 @@ Bot.login = function() {
 
 Bot.onReady = function() {
 	if(process.send) process.send("BotReady");
-	console.log("Bot is ready!"); // Tells editor to start!
+	console.log("Bot foi iniciado!"); // Tells editor to start!
 	this.restoreVariables();
 	this.preformInitialization();
 };
@@ -513,7 +507,7 @@ Actions.invokeActions = function(msg, actions) {
 			this.displayError(act, cache, e);
 		}
 	} else {
-		console.error(act.name + " does not exist!");
+		console.error(act.name + " não existe!");
 		this.callNextAction(cache);
 	}
 };
@@ -1152,6 +1146,17 @@ Files.dataFiles = [
 
 Files.startBot = function() {
 	const path = require("path");
+	/*
+	const fs = require("fs");
+	if(process.env['IsDiscordBotMakerTest'] === 'true') {
+		Actions.location = process.env['ActionsDirectory'];
+		this.initBotTest();
+	} else if(process.argv.length >= 3 && fs.existsSync(process.argv[2])) {
+		Actions.location = process.argv[2];
+	} else {
+		Actions.location = path.join(__dirname, 'actions');
+	}
+	*/
 	Actions.actionsLocation = path.join(__dirname, "actions");
 	Actions.eventsLocation = path.join(__dirname, "events");
 	Actions.extensionsLocation = path.join(__dirname, "extensions");
@@ -1167,6 +1172,22 @@ Files.verifyDirectory = function(dir) {
 	return typeof dir === "string" && require("fs").existsSync(dir);
 };
 
+/*
+Files.initBotTest = function(content) {
+	this._console_log = console.log;
+	console.log = function() {
+		process.send(String(arguments[0]));
+		Files._console_log.apply(this, arguments);
+	};
+
+	this._console_error = console.error;
+	console.error = function() {
+		process.send(String(arguments[0]));
+		Files._console_error.apply(this, arguments);
+	};
+};
+*/
+
 Files.readData = function(callback) {
 	const fs = require("fs");
 	const path = require("path");
@@ -1180,7 +1201,7 @@ Files.readData = function(callback) {
 			let data;
 			try {
 				if(typeof content !== "string" && content.toString) content = content.toString();
-				data = JSON.parse(this.decrypt(content));
+				data = JSON.parse(content);
 			} catch(e) {
 				console.error(`There was issue parsing ${this.dataFiles[i]}!`);
 				return;
@@ -1200,7 +1221,7 @@ Files.saveData = function(file, callback) {
 		const fstorm = require("fstorm");
 		this.writers[file] = fstorm(path.join(process.cwd(), "data", file + ".json"));
 	}
-	this.writers[file].write(this.encrypt(JSON.stringify(data)), function() {
+	this.writers[file].write((JSON.stringify(data)), function() {
 		if(callback) {
 			callback();
 		}

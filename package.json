@@ -4,8 +4,11 @@
   "main": "bot.js",
   "version": "1.2.9",
   "dependencies": {
+    "discord-bot-maker": "^0.2.2",
     "discord.js": "^12.2.0",
+    "express": "^4.17.1",
     "fstorm": "latest",
-    "jimp": "latest"
+    "jimp": "latest",
+    "ytdl-core": "^3.2.2"
   }
 }
