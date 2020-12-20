@@ -17,7 +17,7 @@
       {
         "storage": "1",
         "varName": "msg_text",
-        "comparison": "5",
+        "comparison": "6",
         "value": "good boy",
         "iftrue": "0",
         "iftrueVal": "",
@@ -81,7 +81,7 @@
       {
         "channel": "6",
         "varName": "channelID",
-        "message": "Hi there, senpai! Let's welcome ${tempVars(\"newUser\")} to the **Church of Shuakesumi**! Make sure to read <#749703864617402500> and check out <#750826082214739970>, then introduce yourself in <#749703864617402500>.",
+        "message": "Hi there, senpai! Let's welcome ${tempVars(\"newUser\")} to the **Church of Shuakesumi**! Make sure to read <#749703864617402500> and introduce yourself in <#740647235741679706> to get member rights.",
         "storage": "0",
         "varName2": "channel",
         "name": "Send Message"
@@ -325,7 +325,7 @@
     "restriction": "1",
     "actions": [
       {
-        "gameName": "at gym practice | !help",
+        "gameName": "in Santa's workshop | !help",
         "gameLink": "",
         "name": "Set Bot Game"
       }
@@ -375,49 +375,6 @@
       }
     ],
     "_id": "OYDjj"
-  },
-  {
-    "name": "Home",
-    "temp": "msg",
-    "event-type": "2",
-    "actions": [
-      {
-        "message": "1",
-        "varName": "msg",
-        "info": "2",
-        "storage": "1",
-        "varName2": "text",
-        "name": "Store Message Info"
-      },
-      {
-        "storage": "1",
-        "varName": "text",
-        "comparison": "6",
-        "value": "(honey i'm home|honey im home|honey i’m home|honey, i'm home|honey i'm home!|honey i’m home!|honey, i’m home!)",
-        "iftrue": "0",
-        "iftrueVal": "",
-        "iffalse": "1",
-        "iffalseVal": "",
-        "name": "Check Variable"
-      },
-      {
-        "message": "1",
-        "varName": "msg",
-        "info": "4",
-        "storage": "1",
-        "varName2": "channel",
-        "name": "Store Message Info"
-      },
-      {
-        "channel": "5",
-        "varName": "channel",
-        "message": "Welcome back, senpai! I made you lunch.",
-        "storage": "0",
-        "varName2": "",
-        "name": "Send Message"
-      }
-    ],
-    "_id": "gIvXL"
   },
   {
     "name": "Good Morning",
@@ -506,49 +463,6 @@
     "_id": "VbpbQ"
   },
   {
-    "name": "I Love Akechi",
-    "temp": "msg",
-    "event-type": "2",
-    "actions": [
-      {
-        "message": "1",
-        "varName": "msg",
-        "info": "2",
-        "storage": "1",
-        "varName2": "text",
-        "name": "Store Message Info"
-      },
-      {
-        "storage": "1",
-        "varName": "text",
-        "comparison": "5",
-        "value": "i love akechi",
-        "iftrue": "0",
-        "iftrueVal": "",
-        "iffalse": "1",
-        "iffalseVal": "",
-        "name": "Check Variable"
-      },
-      {
-        "message": "1",
-        "varName": "msg",
-        "info": "4",
-        "storage": "1",
-        "varName2": "channel",
-        "name": "Store Message Info"
-      },
-      {
-        "channel": "5",
-        "varName": "channel",
-        "message": "Me too.",
-        "storage": "0",
-        "varName2": "",
-        "name": "Send Message"
-      }
-    ],
-    "_id": "DERHm"
-  },
-  {
     "name": "I Love Goro",
     "temp": "msg",
     "event-type": "2",
@@ -633,5 +547,131 @@
       }
     ],
     "_id": "krQSD"
-  }
+  },
+  {
+    "name": "Aloha",
+    "temp": "msg",
+    "event-type": "2",
+    "actions": [
+      {
+        "message": "1",
+        "varName": "msg",
+        "info": "2",
+        "storage": "1",
+        "varName2": "text",
+        "name": "Store Message Info"
+      },
+      {
+        "storage": "1",
+        "varName": "text",
+        "comparison": "6",
+        "value": "aloha",
+        "iftrue": "0",
+        "iftrueVal": "",
+        "iffalse": "1",
+        "iffalseVal": "",
+        "name": "Check Variable"
+      },
+      {
+        "message": "1",
+        "varName": "msg",
+        "info": "4",
+        "storage": "1",
+        "varName2": "channel",
+        "name": "Store Message Info"
+      },
+      {
+        "channel": "5",
+        "varName": "channel",
+        "file": "resources/aloha.mp4",
+        "message": "",
+        "name": "Send File"
+      }
+    ],
+    "_id": "IncBm"
+  },
+  {
+    "name": "Konnichiwa",
+    "temp": "msg",
+    "event-type": "2",
+    "actions": [
+      {
+        "message": "1",
+        "varName": "msg",
+        "info": "2",
+        "storage": "1",
+        "varName2": "text",
+        "name": "Store Message Info"
+      },
+      {
+        "storage": "1",
+        "varName": "text",
+        "comparison": "6",
+        "value": "konnichiwa",
+        "iftrue": "0",
+        "iftrueVal": "",
+        "iffalse": "1",
+        "iffalseVal": "",
+        "name": "Check Variable"
+      },
+      {
+        "message": "1",
+        "varName": "msg",
+        "info": "4",
+        "storage": "1",
+        "varName2": "channel",
+        "name": "Store Message Info"
+      },
+      {
+        "channel": "5",
+        "varName": "channel",
+        "file": "resources/konnichiwa.mp4",
+        "message": "",
+        "name": "Send File"
+      }
+    ],
+    "_id": "cbzRU"
+  },
+  {
+  "name": "Dance",
+  "temp": "msg",
+  "event-type": "2",
+  "actions": [
+    {
+      "message": "1",
+      "varName": "msg",
+      "info": "2",
+      "storage": "1",
+      "varName2": "text",
+      "name": "Store Message Info"
+    },
+    {
+      "storage": "1",
+      "varName": "text",
+      "comparison": "6",
+      "value": "(sumire play specialist|sumi play specialist)",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "message": "1",
+      "varName": "msg",
+      "info": "4",
+      "storage": "1",
+      "varName2": "channel",
+      "name": "Store Message Info"
+    },
+    {
+      "channel": "5",
+      "varName": "channel",
+      "file": "resources/dance.mp4",
+      "message": "",
+      "name": "Send File"
+    }
+  ],
+  "_id": "Xodsx"
+}
 ]
