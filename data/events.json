@@ -673,5 +673,305 @@
     }
   ],
   "_id": "Xodsx"
+  },
+  {
+  "name": "Pinterest_1",
+  "temp": "msg",
+  "event-type": "2",
+  "actions": [
+    {
+      "message": "1",
+      "varName": "msg",
+      "info": "2",
+      "storage": "1",
+      "varName2": "text",
+      "name": "Store Message Info"
+    },
+    {
+      "storage": "1",
+      "varName": "text",
+      "comparison": "5",
+      "value": "https://pin.it/",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "msg",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "message": "1",
+      "varName": "msg",
+      "info": "4",
+      "storage": "1",
+      "varName2": "channel",
+      "name": "Store Message Info"
+    },
+    {
+      "channel": "5",
+      "varName": "channel",
+      "message": "We don't share art from Pinterest since it isn't a proper source! Please cite it properly.",
+      "storage": "1",
+      "varName2": "reason",
+      "name": "Send Message"
+    },
+    {
+      "time": "10",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "1",
+      "varName": "reason",
+      "reason": "",
+      "name": "Delete Message"
+    }
+  ],
+  "_id": "pgkLX"
+},
+{
+  "name": "Pinterest_2",
+  "temp": "msg",
+  "event-type": "2",
+  "actions": [
+    {
+      "message": "1",
+      "varName": "msg",
+      "info": "2",
+      "storage": "1",
+      "varName2": "text",
+      "name": "Store Message Info"
+    },
+    {
+      "storage": "1",
+      "varName": "text",
+      "comparison": "5",
+      "value": "https://www.pinterest.com/",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "msg",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "message": "1",
+      "varName": "msg",
+      "info": "4",
+      "storage": "1",
+      "varName2": "channel",
+      "name": "Store Message Info"
+    },
+    {
+      "channel": "5",
+      "varName": "channel",
+      "message": "We don't share art from Pinterest since it isn't a proper source! Please cite it properly.",
+      "storage": "1",
+      "varName2": "reason",
+      "name": "Send Message"
+    },
+    {
+      "time": "10",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "1",
+      "varName": "reason",
+      "reason": "",
+      "name": "Delete Message"
+    }
+  ],
+  "_id": "wDcAs"
+},
+{
+  "name": "Pinterest_3",
+  "temp": "msg",
+  "event-type": "2",
+  "actions": [
+    {
+      "message": "1",
+      "varName": "msg",
+      "info": "2",
+      "storage": "1",
+      "varName2": "text",
+      "name": "Store Message Info"
+    },
+    {
+      "storage": "1",
+      "varName": "text",
+      "comparison": "5",
+      "value": "www.pinterest.com/",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "msg",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "message": "1",
+      "varName": "msg",
+      "info": "4",
+      "storage": "1",
+      "varName2": "channel",
+      "name": "Store Message Info"
+    },
+    {
+      "channel": "5",
+      "varName": "channel",
+      "message": "We don't share art from Pinterest since it isn't a proper source! Please cite it properly.",
+      "storage": "1",
+      "varName2": "reason",
+      "name": "Send Message"
+    },
+    {
+      "time": "10",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "1",
+      "varName": "reason",
+      "reason": "",
+      "name": "Delete Message"
+    }
+  ],
+  "_id": "oLcBB"
+},
+{
+  "name": "WeHeartIt_1",
+  "temp": "msg",
+  "event-type": "2",
+  "actions": [
+    {
+      "message": "1",
+      "varName": "msg",
+      "info": "2",
+      "storage": "1",
+      "varName2": "text",
+      "name": "Store Message Info"
+    },
+    {
+      "storage": "1",
+      "varName": "text",
+      "comparison": "5",
+      "value": "https://weheartit.com/",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "msg",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "message": "1",
+      "varName": "msg",
+      "info": "4",
+      "storage": "1",
+      "varName2": "channel",
+      "name": "Store Message Info"
+    },
+    {
+      "channel": "5",
+      "varName": "channel",
+      "message": "We don't share art from WeHeartIt since it isn't a proper source! Please cite it properly.",
+      "storage": "1",
+      "varName2": "reason",
+      "name": "Send Message"
+    },
+    {
+      "time": "10",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "1",
+      "varName": "reason",
+      "reason": "",
+      "name": "Delete Message"
+    }
+  ],
+  "_id": "QGIvb"
+},
+{
+  "name": "WeHeartIt_2",
+  "temp": "msg",
+  "event-type": "2",
+  "actions": [
+    {
+      "message": "1",
+      "varName": "msg",
+      "info": "2",
+      "storage": "1",
+      "varName2": "text",
+      "name": "Store Message Info"
+    },
+    {
+      "storage": "1",
+      "varName": "text",
+      "comparison": "5",
+      "value": "www.weheartit.com/",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "msg",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "message": "1",
+      "varName": "msg",
+      "info": "4",
+      "storage": "1",
+      "varName2": "channel",
+      "name": "Store Message Info"
+    },
+    {
+      "channel": "5",
+      "varName": "channel",
+      "message": "We don't share art from WeHeartIt since it isn't a proper source! Please cite it properly.",
+      "storage": "1",
+      "varName2": "reason",
+      "name": "Send Message"
+    },
+    {
+      "time": "10",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "1",
+      "varName": "reason",
+      "reason": "",
+      "name": "Delete Message"
+    }
+  ],
+  "_id": "HXqVa"
 }
 ]
