@@ -217,7 +217,31 @@
       "storage": "0",
       "varName": "",
       "name": "Run Script"
+    },
+    {
+  "name": "(gn sumi|goodnight sumi|goodnight sumire|gn sumire)",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "bHaBW",
+  "actions": [
+    {
+      "storage": "1",
+      "varName": "rand_num",
+      "min": "1",
+      "max": "11",
+      "name": "Generate Random Number"
+    },
+    {
+      "behavior": "0",
+      "interpretation": "0",
+      "code": "switch(tempVars(\"rand_num\")){\ncase 1: msg.channel.send(\"Goodnight, senpai!\"); break;\ncase 2: msg.channel.send(\"Goodnight, senpai!\"); break;\ncase 3: msg.channel.send(\"Goodnight, senpai!\"); break;\ncase 4: msg.channel.send(\"Goodnight, senpai!\"); break;\ncase 5: msg.channel.send(\"Fucking finally...\"); break;\ncase 6: msg.channel.send(\"Goodnight, senpai!\"); break;\ncase 7: msg.channel.send(\"Took you long enough.\"); break;\ncase 8: msg.channel.send(\"Goodnight, senpai!\"); break;\ncase 9: msg.channel.send(\"Goodnight, senpai!\"); break;\ncase 10: msg.channel.send(\"Goodnight, senpai!\"); break;\ndefault: msg.channel.send(\"Goodnight, senpai!\"); break;\n}",
+      "storage": "0",
+      "varName": "",
+      "name": "Run Script"
     }
+  ],
+  "comType": "2"
+}
   ]
 }
   ]

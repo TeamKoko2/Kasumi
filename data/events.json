@@ -277,55 +277,12 @@
     "_id": "ETdAc"
   },
   {
-    "name": "Goodnight",
-    "temp": "msg",
-    "event-type": "2",
-    "actions": [
-      {
-        "message": "1",
-        "varName": "msg",
-        "info": "2",
-        "storage": "1",
-        "varName2": "msg_text",
-        "name": "Store Message Info"
-      },
-      {
-        "storage": "1",
-        "varName": "msg_text",
-        "comparison": "6",
-        "value": "(goodnight sumi|goodnight sumire|goodnight kasumi)",
-        "iftrue": "0",
-        "iftrueVal": "",
-        "iffalse": "1",
-        "iffalseVal": "",
-        "name": "Check Variable"
-      },
-      {
-        "message": "1",
-        "varName": "msg",
-        "info": "4",
-        "storage": "1",
-        "varName2": "channel",
-        "name": "Store Message Info"
-      },
-      {
-        "channel": "5",
-        "varName": "channel",
-        "message": "Goodnight, senpai!",
-        "storage": "0",
-        "varName2": "msg",
-        "name": "Send Message"
-      }
-    ],
-    "_id": "xrugF"
-  },
-  {
     "name": "Status",
     "permissions": "NONE",
     "restriction": "1",
     "actions": [
       {
-        "gameName": "in Santa's workshop | !help",
+        "gameName": "in gymnastics | !help",
         "gameLink": "",
         "name": "Set Bot Game"
       }
